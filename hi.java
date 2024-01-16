@@ -1,14 +1,15 @@
 import java.util.Scanner;
 public class hi  {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int i=sc.nextInt(),j;
-        for(j=0;j<3;j++)
-        {
-            System.out.print(i%10);
-            System.out.println('\t');
-            i/=10;
-        }
-
+        //   &一假全假
+        System.out.println(true&false);
+        System.out.println(true&true);
+       //   |   一真全真
+        System.out.println(true|true);
+        System.out.println(true|false);
+        //  ^  同为假，异为真
+        System.out.println(true^true);
+        System.out.println(true^false);
     }
 }
+
