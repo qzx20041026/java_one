@@ -3,10 +3,14 @@ import java.util.Scanner;
 import java.util.Random;
 public class hi {
     public static void main(String[] age) {
-      String str="121354";
-        //replace替换
-      String a=str.replace("2","*");
-        System.out.println(a);
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        //reverse反转
+        String a = new StringBuilder().append(str).reverse().toString();
+        boolean flag=str.equals(a);
+        if (flag)
+            System.out.println("是对称字符串");
+        else System.out.println("不是");
     }
 }
 
