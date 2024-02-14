@@ -1,13 +1,22 @@
 public class Student {
     private int age;
     private String name;
+    private String id;
+    private String address;
 
-    public Student(int age, String name) {
+    public Student(int age, String name, String id, String address) {
         this.age = age;
         this.name = name;
+        this.id = id;
+        this.address = address;
     }
 
-    public Student() {
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getName() {
@@ -18,11 +27,22 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getId() {
+        return id;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Student() {
     }
 }
